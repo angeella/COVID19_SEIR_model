@@ -14,6 +14,7 @@ We used a SEIR model to predict the trend of the actual COVID19 epidemic in the 
 
 ```{r setup, include=TRUE}
 rm(list=ls())
+library(EpiDynamics)
 ###import italian dataset updated 13 March 2020 - 
 dat_csv<-read.csv("https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv",header=T)
 #we restricted the analysis to the Veneto Region
